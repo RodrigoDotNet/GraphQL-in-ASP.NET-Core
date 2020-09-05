@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Bogus" Version="30.0.4" />
+	  <PackageReference Include="GraphQL" Version="2.4.0" />
+	  <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
+	  <PackageReference Include="GraphQL.Server.Ui.Playground" Version="3.4.0" />
+	<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.14.0" />
+	<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
