@@ -12,8 +12,11 @@ namespace StudyCaseGraphQL.GraphQL.Types
             Field(x => x.PrimeiroNome).Description("Primeiro nome cliente");
             Field(x => x.Sobrenome).Description("Sobrenome cliente");
             Field(x => x.Email).Description("Email cliente");
-            Field(x => x.DataNascimento.Date).Description("Data nascimento cliente");
+            Field(x => x.DataNascimento.Date).Description("Data nascimento cliente").Name("DataNascimento");
             Field(x => x.MaiorDeIdade).Description("Cliente maior de idade");
+
+            Field<EnderecoGraphType>(nameof(Cliente.Endereco));
+            Field<ListGraphType<TelefoneGraphType>>(nameof(Cliente.Telefones));
         }
     }
 }
